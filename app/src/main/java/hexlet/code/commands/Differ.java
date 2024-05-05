@@ -1,5 +1,6 @@
 package hexlet.code.commands;
 
+import hexlet.code.Compare;
 import picocli.CommandLine;
 
 import java.nio.file.Path;
@@ -22,7 +23,7 @@ public class Differ implements Callable {
 
     @Override
     public Object call() throws Exception {
-        System.out.println(filepath1);
+        Compare.compareJson(filepath1, filepath2);
         return null;
     }
 }
