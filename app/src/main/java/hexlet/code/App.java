@@ -2,22 +2,34 @@ package hexlet.code;
 
 import picocli.CommandLine;
 
+import java.nio.file.Path;
 import java.util.concurrent.Callable;
+
+public class App {
+
+    public static void main(String... args) {
+        new CommandLine(new Differ()).execute(args);
+    }
+}
 
 @CommandLine.Command(
         name = "gendiff",
         description = "Compares two configuration files and shows a difference.",
         mixinStandardHelpOptions = true
 )
-public class App implements Callable<String> {
+class Differ implements Callable{
+    @CommandLine.Parameters(description = "path to first file", paramLabel = "filepath1")
+    Path filepath1;
 
-    public static void main(String... args) {
-        var exitCode = new CommandLine(new App()).execute(args);
-        System.exit(exitCode);
-    }
+    @CommandLine.Parameters(description = "path to second file", paramLabel = "filepath2")
+    Path filepath2;
+
+    @CommandLine.Option(names = {"-f", "--format"}, description = "output format [default: stylish]", defaultValue = "stylish")
+    String format;
 
     @Override
-    public String call() throws Exception {
-        return "";
+    public Object call() throws Exception {
+        System.out.println(filepath1);
+        return null;
     }
 }
