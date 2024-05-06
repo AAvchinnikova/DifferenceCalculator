@@ -1,8 +1,9 @@
 package hexlet.code.commands;
 
-import hexlet.code.Compare;
+import hexlet.code.Differ;
 import picocli.CommandLine;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.Callable;
 
@@ -11,7 +12,7 @@ import java.util.concurrent.Callable;
         description = "Compares two configuration files and shows a difference.",
         mixinStandardHelpOptions = true
 )
-public class Differ implements Callable {
+public class GenDiff implements Callable {
     @CommandLine.Parameters(description = "path to first file", paramLabel = "filepath1")
     Path filepath1;
 
@@ -23,7 +24,12 @@ public class Differ implements Callable {
 
     @Override
     public Object call() throws Exception {
-        Compare.compareJson(filepath1, filepath2);
+        Path absolutOfPath1 = filepath1.toAbsolutePath().normalize();
+        Path absolutOfPath2 = filepath2.toAbsolutePath().normalize();
+        if (!Files.exists(absolutOfPath1) || !Files.exists(absolutOfPath2)) {
+            throw new Exception("File does not exist");
+        }
+        Differ.generate(absolutOfPath1, absolutOfPath2);
         return null;
     }
 }
