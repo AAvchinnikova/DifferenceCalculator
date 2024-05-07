@@ -14,7 +14,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - uses: gradle/gradle-build-action@v3 with: build-root-directory: app
+      - uses: gradle/gradle-build-action@v3 
         with:
           gradle-version: 8.7
       - run: ./gradlew checkstyleMain
