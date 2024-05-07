@@ -13,13 +13,9 @@ public class Differ {
 
     public static String generate(Path filePath1, Path filePath2) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
-        var mapOfFile1
-                = mapper.readValue(new File(filePath1.toUri()), new TypeReference<TreeMap<String, String>>() {
-
+        var mapOfFile1 = mapper.readValue(new File(filePath1.toUri()), new TypeReference<TreeMap<String, String>>() {
         });
-        var  mapOfFile2
-                = mapper.readValue(new File(filePath2.toUri()), new TypeReference<TreeMap<String, String>>() {
-
+        var  mapOfFile2 = mapper.readValue(new File(filePath2.toUri()), new TypeReference<TreeMap<String, String>>() {
         });
         var resultDif = new LinkedHashMap<>();
         mapOfFile1.forEach((key1, value1) -> {
@@ -37,7 +33,7 @@ public class Differ {
             }
         });
         mapOfFile2.forEach((key2, value2) -> {
-        if (!mapOfFile1.containsKey(key2)) {
+            if (!mapOfFile1.containsKey(key2)) {
                 resultDif.put("+ " + key2, value2);
             }
         });
