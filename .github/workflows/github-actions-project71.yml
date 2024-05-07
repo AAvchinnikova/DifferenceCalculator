@@ -9,21 +9,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
         with:
           java-version: '21'
           distribution: 'temurin'
-      - uses: gradle/gradle-build-action@v3
+      - name: Build with Gradle
+      - uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: 8.7
-      - run: .app/gradlew checkstyleMain
-      - run: .app/gradlew test
+          arguments: build
+          build-root-direction: ~java-project-71.app
       # - name: Publish code coverage
       #   uses: paambaati/codeclimate-action@v5.0.0
       #   env:
-      CODECLIMATE71: ${{secrets.CODECLIMATE71}}
-      JACOCO_SOURCE_PATH: app/src/main/java
-      with:
-      coverageCommand: make report
-      coverageLocations: ${{github.workspace}}/build/reports/jacoco/test/jacocoTestReport.xml:jacoco
+           CODECLIMATE71: ${{secrets.CODECLIMATE71}}
+           JACOCO_SOURCE_PATH: app/src/main/java
+      #   with:
+      #     coverageCommand: make report
+          coverageLocations: ${{github.workspace}}/app/build/reports/jacoco/test/jacocoTestReport.xml:jacoco
