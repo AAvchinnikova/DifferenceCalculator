@@ -15,9 +15,11 @@ public class Differ {
         ObjectMapper mapper = new ObjectMapper();
         var mapOfFile1
                 = mapper.readValue(new File(filePath1.toUri()), new TypeReference<TreeMap<String, String>>() {
+
         });
         var  mapOfFile2
                 = mapper.readValue(new File(filePath2.toUri()), new TypeReference<TreeMap<String, String>>() {
+
         });
         var resultDif = new LinkedHashMap<>();
         mapOfFile1.forEach((key1, value1) -> {

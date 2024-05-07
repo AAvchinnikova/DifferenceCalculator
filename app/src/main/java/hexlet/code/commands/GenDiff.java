@@ -2,7 +2,6 @@ package hexlet.code.commands;
 
 import hexlet.code.Differ;
 import picocli.CommandLine;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.Callable;
@@ -19,7 +18,8 @@ public class GenDiff implements Callable {
     @CommandLine.Parameters(description = "path to second file", paramLabel = "filepath2")
     Path filepath2;
 
-    @CommandLine.Option(names = {"-f", "--format"}, description = "output format [default: stylish]", defaultValue = "stylish")
+    @CommandLine.Option(names = {"-f", "--format"},
+            description = "output format [default: stylish]", defaultValue = "stylish")
     String format;
 
     @Override
