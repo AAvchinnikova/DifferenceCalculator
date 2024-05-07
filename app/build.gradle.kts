@@ -28,12 +28,12 @@ dependencies {
     implementation("org.apache.commons:commons-collections4:4.4")
 }
 
+
 checkstyle {
     toolVersion = "10.14.2"
     configFile = file("/app/config/checkstyle/checkstyle.xml")
     isIgnoreFailures = false
 }
-
 
 tasks.test {
     useJUnitPlatform()
