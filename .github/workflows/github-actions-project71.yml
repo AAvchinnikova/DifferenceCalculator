@@ -18,13 +18,8 @@ jobs:
       - name: Build with Gradle
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments: build
-          build-root-direction: ~java-project-71.app
-      # - name: Publish code coverage
-      #   uses: paambaati/codeclimate-action@v5.0.0
-      #   env:
-           CODECLIMATE71: ${{secrets.CODECLIMATE71}}
-           JACOCO_SOURCE_PATH: app/src/main/java
+          arguments: { build-root-direction: app }
+          #    JACOCO_SOURCE_PATH: app/src/main/java
       #   with:
       #     coverageCommand: make report
           coverageLocations: ${{github.workspace}}/app/build/reports/jacoco/test/jacocoTestReport.xml:jacoco
