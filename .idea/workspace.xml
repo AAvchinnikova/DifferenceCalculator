@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e6f89f-9c07-47ef-808c-ee8a01c94059" name="Changes" comment="step 6">
-      <change afterPath="$PROJECT_DIR$/app/filepath1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/filepath2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.app [installDist]">
+  <component name="RunManager" selected="Gradle.app [jacocoTestReport]">
     <configuration name="app [installDist]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -216,10 +213,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [jacocoTestReport]" />
         <item itemvalue="Gradle.app [jacocoTestCoverageVerification]" />
         <item itemvalue="Gradle.app [test]" />
+        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [run]" />
       </list>
     </recent_temporary>
