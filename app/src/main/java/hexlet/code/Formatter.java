@@ -17,8 +17,8 @@ public class Formatter {
                 return Plain.format(resultOfDiff);
             case "json":
                 return Json.format(resultOfDiff);
+            default:
+                throw new IllegalArgumentException("Invalid format: " + format);
         }
-        throw new IllegalArgumentException("Invalid format: " + format);
     }
-
 }

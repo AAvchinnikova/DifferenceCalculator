@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
         description = "Compares two configuration files and shows a difference.",
         mixinStandardHelpOptions = true
 )
-public class App implements Callable <Integer> {
+public class App implements Callable<Integer> {
 
     @CommandLine.Parameters(index = "0", description = "path to first file", paramLabel = "filepath1")
     private String filepath1;

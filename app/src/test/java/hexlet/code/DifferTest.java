@@ -96,5 +96,4 @@ public class DifferTest {
         String actual = Differ.generate(ymlPath1, ymlPath2, "json");
         assertEquals(mapper.readTree(jsonExpected), mapper.readTree(actual));
     }
-
 }
