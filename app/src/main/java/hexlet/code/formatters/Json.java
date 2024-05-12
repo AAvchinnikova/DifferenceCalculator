@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class Json {
 
-    public static String format(List<Map<String, Object>> tree) throws JsonProcessingException {
+    public static String format(List<Map<String, Object>> resultDiff) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(tree);
+        return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(resultDiff);
     }
 }

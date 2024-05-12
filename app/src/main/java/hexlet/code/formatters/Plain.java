@@ -6,11 +6,11 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Plain {
-    public static String format(List<Map<String, Object>> tree) {
+    public static String format(List<Map<String, Object>> resultDiff) {
         StringBuilder diffTree = new StringBuilder();
-        String stringTree = tree.stream().map(Plain::mapping).collect(Collectors.joining());
+        String stringResultDiff = resultDiff.stream().map(Plain::mapping).collect(Collectors.joining());
 
-        diffTree.append(stringTree);
+        diffTree.append(stringResultDiff);
         return diffTree.toString().trim();
     }
 

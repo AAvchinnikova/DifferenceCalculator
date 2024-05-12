@@ -8,9 +8,9 @@ public class Stylish {
 
     private static final int INDENT_COUNT = 4;
 
-    public static String format(List<Map<String, Object>> tree) {
+    public static String format(List<Map<String, Object>> resultDiff) {
         StringBuilder diffTree = new StringBuilder("{\n");
-        String stringTree = tree.stream().map(Stylish::mapping).collect(Collectors.joining("\n"));
+        String stringTree = resultDiff.stream().map(Stylish::mapping).collect(Collectors.joining("\n"));
 
         diffTree.append(stringTree).append("\n}");
         return diffTree.toString();
