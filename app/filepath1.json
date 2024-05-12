@@ -1,0 +1,9 @@
+{
+  "setting1": "Some value",
+  "key1": "value1",
+  "numbers1": [1, 2, 3, 4],
+  "default": null,
+  "checked": false,
+  "numbers3": [3, 4, 5],
+  "chars2": ["d", "e", "f"]
+}
