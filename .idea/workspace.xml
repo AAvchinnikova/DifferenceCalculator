@@ -83,9 +83,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.app [check].executor": "Run",
     "Gradle.app [installDist].executor": "Run",
     "Gradle.app [jacocoTestCoverageVerification].executor": "Run",
     "Gradle.app [jacocoTestReport].executor": "Run",
+    "Gradle.app [runShadow].executor": "Run",
     "Gradle.app [run].executor": "Run",
     "Gradle.app [test].executor": "Run",
     "Makefile Target.build-run.executor": "Run",
@@ -105,44 +107,124 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Makefile Target.install">
-    <configuration name="install" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/app/Makefile" target="install" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+  <component name="RunManager" selected="Gradle.app [runShadow]">
+    <configuration name="app [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestCoverageVerification" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="lint" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/app/Makefile" target="lint" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+    <configuration name="app [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="report" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/app/Makefile" target="report" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+    <configuration name="app [runShadow]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runShadow" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="run-dist" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/app/Makefile" target="run-dist" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+    <configuration name="app [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="test" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/app/Makefile" target="test" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+    <configuration name="app [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.install" />
-        <item itemvalue="Makefile Target.run-dist" />
-        <item itemvalue="Makefile Target.report" />
-        <item itemvalue="Makefile Target.test" />
-        <item itemvalue="Makefile Target.lint" />
+        <item itemvalue="Gradle.app [runShadow]" />
+        <item itemvalue="Gradle.app [run]" />
+        <item itemvalue="Gradle.app [test]" />
+        <item itemvalue="Gradle.app [jacocoTestCoverageVerification]" />
+        <item itemvalue="Gradle.app [jacocoTestReport]" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715586217763</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="step 6">
+      <option name="closed" value="true" />
+      <created>1715586281436</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715586281436</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

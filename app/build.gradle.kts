@@ -47,7 +47,4 @@ tasks.jacocoTestReport {
         xml.required.set(true)
         description = file("$/app/build/reports/jacoco/test/jacocoTestReport.xml").toString()
     }
-}
-tasks.compileJava {
-    options.release
-}
+
