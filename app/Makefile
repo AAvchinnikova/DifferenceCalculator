@@ -3,7 +3,7 @@ build:
 	./gradlew clean build
 
 install:
-	./gradlew clean install
+	./gradlew clean installDist
 
 run-dist:
 	./build/install/app/bin/app build/resources/test/file1.json build/resources/test/file2.json
