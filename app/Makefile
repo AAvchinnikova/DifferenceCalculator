@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := build-run
 
 setup:
-	./gradlew wrapper --gradle-version 8.7
+	./gradlew wrapper --gradle-version 8.5
 
 clean:
 	./gradlew clean
@@ -13,10 +13,7 @@ install:
 	./gradlew clean installDist
 
 run-dist:
-	@./build/install/app/bin/app
-
-run:
-	./gradlew run
+	./build/install/app/bin/app filepath1.json filepath2.json
 
 test:
 	./gradlew test
