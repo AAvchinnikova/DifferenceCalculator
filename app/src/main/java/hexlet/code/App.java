@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
         description = "Compares two configuration files and shows a difference.",
         mixinStandardHelpOptions = true
 )
-public class App implements Callable<Integer> {
+class App implements Callable<Integer> {
     private static final int SUCCES_EXIT_CODE = 0;
     private static final int ERROR_EXIT_CODE = 1;
 
