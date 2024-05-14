@@ -1,33 +1,33 @@
 .DEFAULT_GOAL := build-run
 
 setup:
-	make -C app setup
+	./gradlew wrapper --gradle-version 8.7
 
 clean:
-	make -C app clean
+	./gradlew clean
 
 build:
-	make -C app build
-
-install:
-	make -C app install
-
-run-dist:
-	make -C app run-dist
+	cd app && ./gradlew clean build
 
 run:
-	make -C app run
-
-test:
-	make -C app test
-
-report:
-	make -C app report
+	./gradlew run --args="-h"
 
 lint:
-	make -C app lint
+	./gradlew checkstyleMain checkstyleTest
 
-check-deps:
-	make -C app check-deps
+test:
+	./gradlew test
+
+report:
+	cd app && ./gradlew jacocoTestReport
+
+install:
+	./gradlew clean install
+
+run-dist:
+	./build/install/app/bin/app -h
+
+check-updates:
+	./gradlew dependencyUpdates
 
 .PHONY: build
