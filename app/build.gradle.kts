@@ -5,8 +5,6 @@ plugins {
     application
     id("checkstyle")
     id ("jacoco")
-    id("io.freefair.lombok") version "8.6"
-    id("com.github.ben-manes.versions") version "0.50.0"
 }
 
 group = "hexlet.code"
