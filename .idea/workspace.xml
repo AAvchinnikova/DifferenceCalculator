@@ -92,7 +92,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Makefile Target.setup">
+  <component name="RunManager" selected="Gradle.app [run]">
     <configuration name="app [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -139,6 +139,11 @@
     </configuration>
     <configuration name="app [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="args" value="-h" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
         <option name="externalSystemIdString" value="GRADLE" />
@@ -180,9 +185,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.setup" />
-        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [run]" />
+        <item itemvalue="Gradle.app [installDist]" />
+        <item itemvalue="Makefile Target.setup" />
         <item itemvalue="Gradle.app [build]" />
         <item itemvalue="Makefile Target.install" />
       </list>
@@ -381,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715588360487</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="step 6">
+      <option name="closed" value="true" />
+      <created>1715670471008</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715670471008</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

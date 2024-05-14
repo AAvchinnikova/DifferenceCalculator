@@ -7,30 +7,27 @@ clean:
 	./gradlew clean
 
 build:
-	./gradlew clean build
-
-install:
-	./gradlew clean installDist
-
-run-dist:
-	./build/install/app/bin/app
+	cd app && ./gradlew clean build
 
 run:
-	./gradlew run
+	./gradlew run --args="-h"
+
+lint:
+	./gradlew checkstyleMain checkstyleTest
 
 test:
 	./gradlew test
 
 report:
-	./gradlew jacocoTestReport
+	cd app && ./gradlew jacocoTestReport
 
-lint:
-	./gradlew checkstyleMain
+install:
+	./gradlew clean install
 
-check-deps:
-	./gradlew dependencyUpdates -Drevision=release
+run-dist:
+	./build/install/app/bin/app -h
 
-
-build-run: build run
+check-updates:
+	./gradlew dependencyUpdates
 
 .PHONY: build
