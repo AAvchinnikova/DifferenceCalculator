@@ -8,6 +8,13 @@
 <a href="https://codeclimate.com/github/AAvchinnikova/java-project-71/test_coverage"><img src="https://api.codeclimate.com/v1/badges/02a3838658a4757c80d5/test_coverage" /></a>
 
 
+
+### Описание
+Эта программа вычислит разницу между двумя файлами. Допустимые форматы для вычисления разницы — Yaml и Json.
+Запустите программу в консоли с тремя параметрами — двумя именами файлов и желаемым форматированием разницы. Имя файла может быть как простым именем, так и абсолютным путем к файлу.
+Третий параметр необязателен.
+По умолчанию форматирование выполняется в стиле, также есть плоский формат и формат json. Примеры этих форматов и как работает программа — см. ниже в asciinema.
+
 ### Step 5 Asciinema:
 [![asciicast](https://asciinema.org/a/qW2odZjUj3h8KGY1TpVozyeq3.svg)](https://asciinema.org/a/qW2odZjUj3h8KGY1TpVozyeq3)
 
