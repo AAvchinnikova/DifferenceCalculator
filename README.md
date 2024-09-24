@@ -11,7 +11,7 @@
 
 ### Описание
 Эта программа вычислит разницу между двумя файлами. Допустимые форматы для вычисления разницы — Yaml и Json.
-Запустите программу в консоли с тремя параметрами — двумя именами файлов и желаемым форматированием разницы. Имя файла может быть как простым именем, так и абсолютным путем к файлу.
+Запуск программы в консоли осуществляется с тремя параметрами — двумя именами файлов и желаемым форматом для разницы. Имя файла может быть как простым именем, так и абсолютным путем к файлу.
 Третий параметр необязателен.
 По умолчанию форматирование выполняется в стиле, также есть плоский формат и формат json. Примеры этих форматов и как работает программа — см. ниже в asciinema.
 
@@ -21,11 +21,11 @@
 ### Сравнение плоских файлов (yaml):
 [![asciicast](https://asciinema.org/a/BHNa4tRrKhRE3bwtGeQlFPYee.svg)](https://asciinema.org/a/BHNa4tRrKhRE3bwtGeQlFPYee)
 
-### Step 8 Asciinema:
+### Обработка данных:
 [![asciicast](https://asciinema.org/a/GWTQ30QnqVhO0tGRIfPjtG0t4.svg)](https://asciinema.org/a/GWTQ30QnqVhO0tGRIfPjtG0t4)
 
-### Step 9 Asciinema:
+### Плоский формат:
 [![asciicast](https://asciinema.org/a/W3R3RTqfXpTtUm91IgSlL03on.svg)](https://asciinema.org/a/W3R3RTqfXpTtUm91IgSlL03on)
 
-### Step 10 Asciinema:
+### Вывод в json:
 [![asciicast](https://asciinema.org/a/jjtPWh9Vt7PrJOtCLBGbcjXqU.svg)](https://asciinema.org/a/jjtPWh9Vt7PrJOtCLBGbcjXqU)
