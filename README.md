@@ -15,10 +15,10 @@
 Третий параметр необязателен.
 По умолчанию форматирование выполняется в стиле, также есть плоский формат и формат json. Примеры этих форматов и как работает программа — см. ниже в asciinema.
 
-### Step 5 Asciinema:
+###  Сравнение плоских файлов (JSON):
 [![asciicast](https://asciinema.org/a/qW2odZjUj3h8KGY1TpVozyeq3.svg)](https://asciinema.org/a/qW2odZjUj3h8KGY1TpVozyeq3)
 
-### Step 7 Asciinema:
+### Сравнение плоских файлов (yaml):
 [![asciicast](https://asciinema.org/a/BHNa4tRrKhRE3bwtGeQlFPYee.svg)](https://asciinema.org/a/BHNa4tRrKhRE3bwtGeQlFPYee)
 
 ### Step 8 Asciinema:
